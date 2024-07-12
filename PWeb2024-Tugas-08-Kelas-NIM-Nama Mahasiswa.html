@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Form Biodata</h2>
+    <form id="biodataForm" onsubmit="return validateForm()">
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <span id="nameError" class="error"></span><br>
+
+        <label for="age">Umur:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <span id="ageError" class="error"></span><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <span id="emailError" class="error"></span><br>
+
+        <label for="phone">No. Telepon:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <span id="phoneError" class="error"></span><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>Output</h3>
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
